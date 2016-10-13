@@ -1,0 +1,122 @@
+.inner-container {
+  background-image: url("../img/bg_zhongbao.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-position-x: 810px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.inner-container .intro {
+  width: 735px;
+}
+.inner-container .intro h2 {
+  font-size: 40px;
+  color: #333333;
+  margin: 90px 0 35px 0;
+}
+.inner-container .intro p {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.inner-container .intro .steps {
+  padding-left: 49px;
+  margin-bottom: 60px;
+}
+.inner-container .intro .steps li {
+  float: left;
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+}
+.inner-container .intro .steps li:last-child {
+  margin-right: 0;
+}
+.inner-container .intro .steps .first {
+  color: white;
+  background-color: #ffcc00;
+  border: 0;
+}
+.inner-container .intro .steps .second {
+  color: #d3c81a;
+  border-color: #cccc33;
+}
+.inner-container .intro .steps .third {
+  color: #99cc33;
+  border-color: #99cc33;
+}
+.inner-container .intro .steps .fourth {
+  color: #66cc66;
+  border-color: #66cc66;
+}
+.inner-container .intro .steps .fifth {
+  color: white;
+  background-color: #57bd63;
+  border: 0;
+}
+.inner-container .intro .steps-container {
+  position: relative;
+}
+.inner-container .intro .steps-container:before {
+  content: "";
+  width: 100%;
+  border-bottom: 3px dotted #d9d9d9;
+  position: absolute;
+  bottom: 25px;
+  z-index: -1;
+}
+.inner-container .intro .steps-container:after {
+  content: "";
+  background-image: url(../img/zhongzhongbao_arrow.png);
+  height: 21px;
+  width: 22px;
+  position: absolute;
+  top: 10px;
+}
+.inner-container .review {
+  width: 740px;
+  padding-bottom: 80px;
+}
+.inner-container .review .content {
+  width: 590px;
+  position: relative;
+  background-color: #fafafa;
+  font-size: 16px;
+  color: #7e6b5a;
+  padding: 25px;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+.inner-container .review .img-container {
+  width: 70px;
+  height: 70px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+}
+.inner-container .review .img-container img {
+  height: 70px;
+  width: 70px;
+}
+.inner-container .review .first {
+  margin-bottom: 20px;
+}
+.inner-container .review .first .img-container {
+  float: left;
+}
+.inner-container .review .first .content {
+  float: right;
+}
+.inner-container .review .second .img-container {
+  float: right;
+}
+.inner-container .review .second .content {
+  float: left;
+}

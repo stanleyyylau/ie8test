@@ -1,0 +1,364 @@
+.m-find .m-section {
+  padding: 65px 0;
+}
+.m-find-nav {
+  margin-bottom: 35px;
+  margin-left: 101px;
+  font-size: 20px;
+}
+.m-find-nav .find-nav-item {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0px 15px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  color: #333;
+}
+.m-find-nav .find-nav-item-cur {
+  border-color: #ffdd00;
+  background-color: #ffdd00;
+}
+.m-find-nav .find-address {
+  display: inline-block;
+  margin-left: 160px;
+  min-width: 80px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  background-color: #3399ff;
+  cursor: pointer;
+}
+.m-find-nav .find-address i {
+  margin-right: 5px;
+}
+.m-find-list {
+  margin-left: 101px;
+  overflow: hidden;
+}
+.find-list-item {
+  float: left;
+  width: 490px;
+  margin: 0 20px 20px 0;
+}
+.find-list-item a {
+  display: block;
+  width: 450px;
+  padding: 20px 0 20px 40px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+}
+.find-list-item a:active,
+.find-list-item a:hover {
+  background-color: #ebf4fc;
+  border-color: #ebf4fc;
+}
+.find-list-item .item-tit {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+.find-list-item .item-tit span {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  vertical-align: text-top;
+  background-color: #3399ff;
+}
+.find-list-item .item-tit .item-tag-all {
+  background-color: #9bd649;
+}
+.find-list-item .item-info {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+.find-list-item .item-info span {
+  margin-right: 20px;
+}
+.find-list-item .item-info i {
+  margin-right: 5px;
+}
+.find-list-item .item-time {
+  font-size: 12px;
+  font-family: Arial;
+  color: #999;
+}
+.m-find-detail {
+  margin-left: 101px;
+  width: 680px;
+}
+.find-detail-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.find-detail-head .find-detail-right {
+  position: relative;
+  float: left;
+  width: 190px;
+  text-align: center;
+}
+.find-detail-head .find-detail-right span {
+  color: #ff5a19;
+  font-size: 18px;
+}
+.find-detail-head .find-detail-right span b {
+  font-size: 24px;
+  font-weight: normal;
+}
+.find-detail-head .find-detail-right a {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 20px;
+  background-color: #ffe32f;
+}
+.find-detail-head .find-detail-left {
+  float: left;
+  width: 490px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+.find-detail-head .find-detail-left .find-detail-tit {
+  font-size: 24px;
+  color: #333;
+}
+.find-detail-head .find-detail-left p {
+  color: #999;
+  font-size: 12px;
+}
+.find-detail-head .job-type {
+  float: left;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #3399ff;
+}
+.find-detail-head .job-type-all {
+  background-color: #9bd649;
+}
+.find-detail-body {
+  padding: 40px 20px 40px 75px;
+  background-color: #f5f9fc;
+  font-size: 18px;
+}
+.find-detail-body .find-detail-item {
+  margin-bottom: 50px;
+}
+.find-detail-body .find-detail-item p {
+  margin-bottom: 10px;
+  color: #333;
+}
+.find-detail-body .find-detail-item p span {
+  margin-right: 40px;
+}
+.find-detail-body .find-detail-item-tit {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+}
+.find-detail-code {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -215px;
+  width: 330px;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  background-color: #fff;
+}
+.find-detail-code p {
+  margin-bottom: 10px;
+}
+.find-detail-code img {
+  width: 330px;
+}
+.find-detail-code span {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  color: #333;
+  background-color: #ffe32f;
+  cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+  .m-find {
+    padding-bottom: 100px;
+    background-color: #f0f0f0;
+  }
+  .m-find .m-section {
+    padding: 10px 0;
+  }
+  .m-find-nav {
+    margin-left: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .m-find-nav .find-nav-item {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin-right: 0;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-radius: 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+  }
+  .m-find-nav .find-nav-item-cur {
+    position: relative;
+    background-color: #fff;
+    border-bottom-color: #ffdd00;
+  }
+  .m-find-nav .find-nav-item-cur:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffdd00;
+  }
+  .m-find-nav .find-address {
+    position: relative;
+    float: left;
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .m-find-nav .find-address:after {
+    content: "\e60a";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-family: 'iconfont';
+    font-style: normal;
+    color: #666;
+  }
+  .m-find-nav .find-address i {
+    margin-right: 5px;
+  }
+  .m-find-list {
+    margin-left: 0;
+  }
+  .find-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .find-list-item a {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+  }
+  .find-list-item a:active,
+  .find-list-item a:hover {
+    background-color: #ebf4fc;
+  }
+  .find-list-item .item-tit {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .find-list-item .item-tit span {
+    font-size: 14px;
+  }
+  .find-list-item .item-info {
+    font-size: 14px;
+  }
+  .m-find-detail {
+    margin-left: 0;
+    width: 100%;
+  }
+  .find-detail-head {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  .find-detail-head .find-detail-right {
+    width: 90px;
+  }
+  .find-detail-head .find-detail-right span {
+    font-size: 14px;
+  }
+  .find-detail-head .find-detail-right span b {
+    font-size: 16px;
+  }
+  .find-detail-head .find-detail-right a {
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .find-detail-head .find-detail-left .find-detail-tit {
+    font-size: 16px;
+    color: #333;
+  }
+  .find-detail-head .find-detail-left p {
+    color: #999;
+    font-size: 12px;
+  }
+  .find-detail-head .job-type {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .find-detail-body {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .find-detail-body .find-detail-item {
+    margin-bottom: 30px;
+  }
+  .find-detail-code {
+    margin-left: 0;
+    margin-top: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  .find-detail-code img {
+    width: 100%;
+  }
+}

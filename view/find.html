@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>找工作</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/sprites.css">
+    <link rel="stylesheet" href="../css/find.css">
+</head>
+<body>
+  @@include('./component/head.html')
+    <div class="m-wrap">
+      <div class="m-find">
+        <div class="m-section">
+          <div class="m-find-nav">
+            <a href="#" class="find-nav-item find-nav-item-cur">实时任务</a><a href="#" class="find-nav-item">长期工作</a>
+            <span class="find-address J_address" data-address="广东-广州">
+              <i class="iconfont icon-didian"></i>广州
+            </span>
+          </div>
+          <ul class="m-find-list J_find">
+            <li class="find-list-item">
+              <a href="#">
+                <p class="item-tit"><span class="item-tag">兼职</span> 工作的标题</p>
+                <p class="item-info">
+                  <span><i class="iconfont icon-didian"></i>位置</span>
+                  <span>公司名称</span>
+                </p> 
+                <p class="item-time">2016-08-06 19：40</p> 
+              </a>
+            </li>
+            <li class="find-list-item">
+              <a href="#">
+                <p class="item-tit"><span class="item-tag">兼职</span> 工作的标题</p>
+                <p class="item-info">
+                  <span><i class="iconfont icon-didian"></i>位置</span>
+                  <span>公司名称</span>
+                </p> 
+                <p class="item-time">2016-08-06 19：40</p> 
+              </a>
+            </li>
+            <li class="find-list-item">
+              <a href="#">
+                <p class="item-tit"><span class="item-tag">兼职</span> 工作的标题</p>
+                <p class="item-info">
+                  <span><i class="iconfont icon-didian"></i>位置</span>
+                  <span>公司名称</span>
+                </p> 
+                <p class="item-time">2016-08-06 19：40</p> 
+              </a>
+            </li>
+            <li class="find-list-item">
+              <a href="#">
+                <p class="item-tit"><span class="item-tag">兼职</span> 工作的标题</p>
+                <p class="item-info">
+                  <span><i class="iconfont icon-didian"></i>位置</span>
+                  <span>公司名称</span>
+                </p> 
+                <p class="item-time">2016-08-06 19：40</p> 
+              </a>
+            </li>
+          </ul>
+          @@include('./component/page.html')
+        </div>
+      </div>
+    </div>
+  @@include('./component/footer.html')
+  <script src="../js/pull2load.js"></script>
+  <script src="../js/loadMore.js"></script>
+  <script>
+    var options = {
+      url: '',// 接口地址
+      type: 'find', // 数据类型
+      dom: 'J_find', // 数据容器标识
+      page: $('.J_page').data('page') // 当前页数
+    }
+    var loading = new loadMore(options)
+  </script>
+</body>
+</html>

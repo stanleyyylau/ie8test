@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.m-wrap {
+  background-color: #f0f0f0;
+  padding-bottom: 115px;
+}
+.inner-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.m-sidebar {
+  padding-top: 30px;
+  width: 265px;
+  height: 370px;
+  float: left;
+  background-color: white;
+}
+.m-sidebar .menu li {
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+}
+.m-sidebar .menu li a {
+  color: black;
+}
+.m-sidebar .menu li.on-select {
+  background-color: #ffdd00;
+  z-index: 2;
+}
+.m-sidebar .menu li.on-select:after {
+  border: 0;
+}
+.m-sidebar .menu li:after {
+  height: 0;
+  padding: 0;
+  border-bottom: 1px solid #dcdcdc;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 177px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.m-content {
+  float: left;
+  width: 915px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 60px 45px;
+}
+.m-content h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.m-content p {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  line-height: 1.8;
+}

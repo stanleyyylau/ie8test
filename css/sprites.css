@@ -1,0 +1,98 @@
+.arrow-left-inner,
+.arrow-right-inner,
+.au-immigrate,
+.benefits-and-such,
+.candidaste-requirement,
+.related-material,
+.taoli-assistance,
+.taoli-immigrate-working,
+.taoli-logo,
+.taoli-tagline,
+.index_left_side_arrow,
+.index_right_side_arrow,
+.related_material_normal,
+.related_material_on_hover_01,
+.immigrate_control_btn,
+.immigrate_control_btn_active {
+  background: url(../img/sprites.png) no-repeat;
+}
+.arrow-left-inner {
+  background-position: 0 -401px;
+  width: 99px;
+  height: 197px;
+}
+.arrow-right-inner {
+  background-position: 0 -186px;
+  width: 99px;
+  height: 198px;
+}
+.au-immigrate {
+  background-position: 0 -714px;
+  width: 332px;
+  height: 38px;
+}
+.benefits-and-such {
+  background-position: 0 -667px;
+  width: 458px;
+  height: 38px;
+}
+.candidaste-requirement {
+  background-position: 0 -618px;
+  width: 332px;
+  height: 38px;
+}
+.related-material {
+  background-position: 0 -812px;
+  width: 164px;
+  height: 38px;
+}
+.taoli-assistance {
+  background-position: 0 -763px;
+  width: 332px;
+  height: 38px;
+}
+.taoli-immigrate-working {
+  background-position: 0 -117px;
+  width: 460px;
+  height: 53px;
+}
+.taoli-logo {
+  background-position: 0 0;
+  width: 101px;
+  height: 59px;
+}
+.taoli-tagline {
+  background-position: 0 -82px;
+  width: 368px;
+  height: 14px;
+}
+.index_left_side_arrow {
+  background-position: 0 -858px;
+  width: 60px;
+  height: 87px;
+}
+.index_right_side_arrow {
+  background-position: 0 -958px;
+  width: 60px;
+  height: 88px;
+}
+.related_material_normal {
+  background-position: 0 -1370px;
+  width: 301px;
+  height: 300px;
+}
+.related_material_on_hover_01 {
+  background-position: 0 -1048px;
+  width: 302px;
+  height: 300px;
+}
+.immigrate_control_btn {
+  background-position: 0 -1706px;
+  width: 20px;
+  height: 20px;
+}
+.immigrate_control_btn_active {
+  background-position: 0 -1679px;
+  width: 20px;
+  height: 20px;
+}

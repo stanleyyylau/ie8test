@@ -1,0 +1,326 @@
+
+@gray: #f0f0f0;
+@white: #ffffff;
+@progressBarMainColor: #585858;
+@compareFontColor: #9a9b95;
+@mainYellow: #ffe32f;
+
+// Box sizing reset
+// apply a natural box layout model to all elements, but allowing components to change
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+// Reuseable Module
+.progress-bar-title {
+    width: 360px;
+    height: 76px;
+    border: 5px solid @progressBarMainColor;
+    margin: 0 auto;
+    text-align: center;
+    color: @progressBarMainColor;
+    font-size: 35px;
+    line-height: 66px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.progress-bar-title:before {
+    height: 66px;  //this will be according to linehight
+    content: "";
+    background-color: #ffdd00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.progress-bar-title.one-fifth:before{
+  width: 70px;
+}
+
+.progress-bar-title.two-fifth:before{
+  width: 140px;
+}
+
+.progress-bar-title.three-fifth:before{
+  width: 210px;
+}
+
+.progress-bar-title.four-fifth:before{
+  width: 280px;
+}
+
+.progress-bar-title.full-width:before{
+  width: 360px;
+}
+
+
+.inner-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hero{
+  position: relative;
+  height: 972px;
+  padding-top: 75px;
+  &:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-color: @mainYellow transparent transparent transparent;
+  }
+  .container{
+    width: 1100px;
+    padding-top: 70px;
+    margin: 0 auto;
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+  }
+  .compare-box {
+    padding-top: 20px;
+    text-align: center;
+    color: @compareFontColor;
+    .compare-box-title {
+    position: relative;
+    width: 130px;
+    height: 110px;
+    display: inline-block;
+    border: 5px solid @progressBarMainColor;
+    font-size: 30px;
+    line-height: 1.2;
+    padding-top: 12px;
+    &:after{
+      content: "";
+      width: 100px;
+      height: 5px;
+      position: absolute;
+      background-color: black;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      }
+    }
+    .others{
+      background-color: #e5e5e5;
+    }
+    .taoli{
+      background-color: @mainYellow;
+    }
+  }
+}
+
+.section{
+  position: relative;
+  height: 716px;
+  width: 100%;
+  min-width: 1200px;
+  padding-top: 75px;
+  &:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  &.section-gray:after{
+    border-color: #ffffff transparent transparent transparent;
+  }
+  &.section-white:after{
+    border-color: #f0f0f0 transparent transparent transparent;
+  }
+}
+
+
+.section-gray{
+  background-color: @gray;
+}
+
+.section-white{
+  background-color: @white;
+}
+
+.section-zhongbao{
+  .benifits-container {
+    padding: 75px 0;
+    width: 1200px;
+    margin: 0 auto;
+    .first-two {
+    margin-bottom: 100px;
+    }
+    .benefit-item {
+    width: 600px;
+    float: left;
+    }
+    .img-container {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    float: left;
+    line-height: 150px;
+    text-align: center;
+    border-radius: 30px;
+    }
+    .img-container img{
+      vertical-align: middle;
+    }
+    .content-container {
+    width: 350px;
+    float: left;
+    padding-left: 25px;
+    height: 150px;
+    }
+    .content-container .benefit-item-title {
+    font-size: 30px;
+    }
+    .content-container .benifit-item-para{
+      font-size: 17px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.section-insure{
+  .insurance-container {
+    padding-top: 75px;
+    width: 1040px;
+    margin: 0 auto;
+    .insurance-item{
+      width: 460px;
+      display: inline-block;
+      h2{
+        padding: 15px 15px;
+        font-size: 25px;
+      }
+      img{
+        width: 458px;
+        height: 287px;
+      }
+      ul{
+        padding-left: 15px;
+      }
+      ul li{
+        font-size: 18px;
+      }
+      ul li:before{
+        width: 10px;
+        height: 10px;
+        content: " ";
+        background-color: red;
+      }
+    }
+    .insurance-item.left{
+      float: left;
+    }
+    .insurance-item.right{
+      float: right;
+    }
+  }
+}
+
+.section.business-zhongbao{
+  .form-container{
+    position: relative;
+    padding-top: 75px;
+    width: 1050px;
+    height: 460px;
+    margin: 0 auto;
+    .barcode-container {
+    width: 410px;
+    height: 175px;
+    display: block;
+    position: absolute;
+    top: 68px;
+    left: 505px;
+    }
+    .follow-wechat{
+      display: inline-block;
+      font-size: 20px;
+      position: relative;
+      bottom: 10px;
+      line-height: 1.7;
+    }
+  }
+  .contact-form{
+    font-size: 26px;
+    .follow-wechat{
+
+    }
+    input{
+      display: block;
+      margin-bottom: 40px;
+      width: 450px;
+      height: 56px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #9f9fa0;
+    }
+    textarea{
+      width: 1040px;
+      height: 155px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #9f9fa0;
+    }
+    button{
+      width: 265px;
+      height: 65px;
+      border: 0;
+      margin: 0 auto;
+      display: block;
+      background-color: @mainYellow;
+      margin-top: 20px;
+    }
+  }
+}
+
+.section.business-entry{
+  height: 520px;
+  .contact-form {
+    padding-top: 75px;
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+    font-size: 26px;
+    textarea{
+      width: 100%;
+      height: 160px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #9f9fa0;
+    }
+    button{
+      width: 265px;
+      height: 65px;
+      border: 0;
+      margin: 0 auto;
+      display: block;
+      background-color: #ffe32f;
+      margin-top: 20px;
+    }
+  }
+
+}

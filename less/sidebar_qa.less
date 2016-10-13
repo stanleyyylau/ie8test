@@ -1,0 +1,62 @@
+// Box sizing reset
+// apply a natural box layout model to all elements, but allowing components to change
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+// reuseable sidebar-qa
+.inner-container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0 50px 0;
+  .m-sidebar-qa{
+    width: 243px;
+    height: 790px;
+    float: left;
+    padding-top: 10px;
+    border: 1px solid #ededed;
+    li{
+      padding-left: 55px;
+      a{
+        color: black;
+      }
+    }
+  }
+  .m-content{
+    width: 912px;
+    float: right;
+  }
+  .menu{
+    li{
+      height: 65px;
+      line-height: 65px;
+      font-size: 20px;
+      &.on-select{
+        background-color: #ffdd00;
+      }
+    }
+  }
+  .qa-list li{
+    font-size: 16px;
+    color: #666666;
+    margin-top: 18px;
+    .on-select{
+      color: #ffcc00;
+      position: relative;
+      &:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 12px;
+        border-color: transparent transparent transparent #ffcc00;
+        position: absolute;
+        left: -20px;
+      }
+    }
+  }
+}

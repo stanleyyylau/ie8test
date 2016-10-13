@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.inner-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0 50px 0;
+}
+.inner-container .m-sidebar-qa {
+  width: 243px;
+  height: 790px;
+  float: left;
+  padding-top: 10px;
+  border: 1px solid #ededed;
+}
+.inner-container .m-sidebar-qa li {
+  padding-left: 55px;
+}
+.inner-container .m-sidebar-qa li a {
+  color: black;
+}
+.inner-container .m-content {
+  width: 912px;
+  float: right;
+}
+.inner-container .menu li {
+  height: 65px;
+  line-height: 65px;
+  font-size: 20px;
+}
+.inner-container .menu li.on-select {
+  background-color: #ffdd00;
+}
+.inner-container .qa-list li {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 18px;
+}
+.inner-container .qa-list li .on-select {
+  color: #ffcc00;
+  position: relative;
+}
+.inner-container .qa-list li .on-select:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 12px;
+  border-color: transparent transparent transparent #ffcc00;
+  position: absolute;
+  left: -20px;
+}
+.service-item {
+  background-color: #ebf4fc;
+  width: 910px;
+  height: 130px;
+  padding-top: 30px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.service-item .service-content {
+  float: left;
+  width: 700px;
+  height: 80px;
+}
+.service-item .service-content i {
+  margin-right: 10px;
+}
+.service-item .service-content .icon-help {
+  font-size: 20px;
+  color: gray;
+}
+.service-item .service-content .help-avatar:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  position: relative;
+  top: 3px;
+  background-image: url("../img/common_qa_help.png");
+}
+.service-item .service-content .title-row {
+  margin-bottom: 15px;
+}
+.service-item .service-content .title-row h2 {
+  display: inline-block;
+  color: #333333;
+  font-size: 20px;
+}
+.service-item .service-content .content-row p {
+  display: inline-block;
+  font-size: 16px;
+  color: #999999;
+}
+.service-item .publish-time {
+  float: left;
+  width: 160px;
+  height: 80px;
+  text-align: right;
+  color: #cccccc;
+}

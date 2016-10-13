@@ -1,0 +1,389 @@
+.arrow-left-inner,
+.arrow-right-inner,
+.au-immigrate,
+.benefits-and-such,
+.candidaste-requirement,
+.related-material,
+.taoli-assistance,
+.taoli-immigrate-working,
+.taoli-logo,
+.taoli-tagline,
+.index_left_side_arrow,
+.index_right_side_arrow,
+.related_material_normal,
+.related_material_on_hover_01,
+.immigrate_control_btn,
+.immigrate_control_btn_active {
+  background: url(../img/sprites.png) no-repeat;
+}
+.arrow-left-inner {
+  background-position: 0 -401px;
+  width: 99px;
+  height: 197px;
+}
+.arrow-right-inner {
+  background-position: 0 -186px;
+  width: 99px;
+  height: 198px;
+}
+.au-immigrate {
+  background-position: 0 -714px;
+  width: 332px;
+  height: 38px;
+}
+.benefits-and-such {
+  background-position: 0 -667px;
+  width: 458px;
+  height: 38px;
+}
+.candidaste-requirement {
+  background-position: 0 -618px;
+  width: 332px;
+  height: 38px;
+}
+.related-material {
+  background-position: 0 -812px;
+  width: 164px;
+  height: 38px;
+}
+.taoli-assistance {
+  background-position: 0 -763px;
+  width: 332px;
+  height: 38px;
+}
+.taoli-immigrate-working {
+  background-position: 0 -117px;
+  width: 460px;
+  height: 53px;
+}
+.taoli-logo {
+  background-position: 0 0;
+  width: 101px;
+  height: 59px;
+}
+.taoli-tagline {
+  background-position: 0 -82px;
+  width: 368px;
+  height: 14px;
+}
+.index_left_side_arrow {
+  background-position: 0 -858px;
+  width: 60px;
+  height: 87px;
+}
+.index_right_side_arrow {
+  background-position: 0 -958px;
+  width: 60px;
+  height: 88px;
+}
+.related_material_normal {
+  background-position: 0 -1370px;
+  width: 301px;
+  height: 300px;
+}
+.related_material_on_hover_01 {
+  background-position: 0 -1048px;
+  width: 302px;
+  height: 300px;
+}
+.immigrate_control_btn {
+  background-position: 0 -1706px;
+  width: 20px;
+  height: 20px;
+}
+.immigrate_control_btn_active {
+  background-position: 0 -1679px;
+  width: 20px;
+  height: 20px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.section .title {
+  margin: 0 auto;
+  font-size: 0;
+}
+.section.top {
+  font-size: 22px;
+  background-color: #f0f0f0;
+  height: 1510px;
+}
+.section.top .inner-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section.top .top-half {
+  background-image: url("../img/immigrate_slide1_up.png");
+  height: 624px;
+  background-position: center;
+}
+.section.top .top-half .au-immigrate {
+  font-size: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+.section.top .top-half p {
+  color: white;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  top: 160px;
+  text-align: center;
+  padding: 10px 0;
+}
+.section.top .bottom-half {
+  background-image: url("../img/immigrate_slide1_down.png");
+  height: 843px;
+  background-position: center;
+  position: relative;
+}
+.section.top .bottom-half .slider-viewport {
+  width: 780px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section.top .bottom-half .slider-viewport .slides-container {
+  width: 3120px;
+  position: relative;
+  left: 0;
+  height: 504px;
+  -webkit-transition: left 0.5s ease-in-out;
+          transition: left 0.5s ease-in-out;
+}
+.section.top .bottom-half .slider-viewport .slides-container .slides {
+  float: left;
+}
+.section.top .bottom-half h2 {
+  font-size: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 70px;
+}
+.section.top .bottom-half p {
+  width: 780px;
+  margin: 0 auto;
+  padding: 134px 0;
+}
+.section.top .bottom-half .status-bar {
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  bottom: 250px;
+  text-align: center;
+}
+.section.top .bottom-half .status-bar li {
+  float: left;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.section.top .bottom-half .status-bar li:last-child {
+  margin-right: 0;
+}
+.section.top .bottom-half .control-btns a {
+  position: absolute;
+  top: 150px;
+  font-size: 0;
+  cursor: pointer;
+}
+.section.top .bottom-half .up {
+  left: 40px;
+}
+.section.top .bottom-half .down {
+  right: 40px;
+}
+.section.benefit-development {
+  height: 600px;
+}
+.section.benefit-development .inner-container {
+  padding-top: 70px;
+  height: inherit;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("../img/immigrate_bg_development.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.section.benefit-development .inner-container .benefits {
+  padding-top: 100px;
+}
+.section.benefit-development .inner-container .benefit-item {
+  width: 275px;
+  height: 305px;
+  margin-right: 28px;
+  float: left;
+  border: 1px solid #f2f2f2;
+  box-shadow: -2px 6px 30px 0px #b5b1b5;
+  -webkit-transition: background-color, border-color 0.1s ease-in;
+          transition: background-color, border-color 0.1s ease-in;
+}
+.section.benefit-development .inner-container .benefit-item i {
+  margin: 35px auto 20px auto;
+  display: block;
+  width: 120px;
+  height: 130px;
+  text-align: center;
+  line-height: 130px;
+  font-size: 120px;
+  color: #84ccc9;
+}
+.section.benefit-development .inner-container .benefit-item .benefit-detail {
+  color: #666666;
+  font-size: 20px;
+  padding: 0 40px;
+}
+.section.benefit-development .inner-container .benefit-item:last-child {
+  margin-right: 0;
+}
+.section.benefit-development .inner-container .benefit-item:hover {
+  background-color: #ffdd00;
+  border-color: #ffdd00;
+}
+.section.benefit-development .inner-container .benefit-item:hover i {
+  color: black;
+}
+.section.related {
+  height: 600px;
+  background-color: #f0f0f0;
+}
+.section.related .inner-container {
+  height: inherit;
+  width: 1205px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.section.related .inner-container .related-materials {
+  padding-top: 100px;
+}
+.section.related .inner-container .related-materials .related_material_on_hover_01 {
+  color: white;
+}
+.section.related .inner-container .related-item {
+  float: left;
+  text-align: center;
+  font-size: 25px;
+  display: table;
+  -webkit-transition: color 0.3s ease-in;
+          transition: color 0.3s ease-in;
+}
+.section.related .inner-container .related-item p {
+  padding: 0 80px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.section.candidate-and-requirement {
+  height: 680px;
+}
+.section.candidate-and-requirement .inner-container {
+  height: inherit;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.section.candidate-and-requirement .requirements {
+  width: 980px;
+  height: 390px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: block;
+}
+.section.candidate-and-requirement .requirement-item {
+  width: 290px;
+  height: 390px;
+  float: left;
+  border: 1px solid #e5e5e5;
+  margin-right: 50px;
+  -webkit-transition: background-color 0.2s ease-in;
+          transition: background-color 0.2s ease-in;
+}
+.section.candidate-and-requirement .requirement-item i {
+  display: block;
+  margin: 70px auto 60px auto;
+  width: 129px;
+  height: 129px;
+  border-radius: 50%;
+  border: 3px solid #333333;
+  text-align: center;
+  line-height: 129px;
+  font-size: 45px;
+}
+.section.candidate-and-requirement .requirement-item .requirement-detail {
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+}
+.section.candidate-and-requirement .requirement-item:hover {
+  background-color: #ffe32f;
+  border-color: #ffe32f;
+}
+.section.candidate-and-requirement .requirement-item:last-child {
+  margin-right: 0;
+}
+.section.assistance {
+  background-color: #f0f0f0;
+  height: 1000px;
+}
+.section.assistance .inner-container {
+  height: inherit;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.section.assistance .taoli-des {
+  color: #666666;
+  font-size: 20px;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  line-height: 2.1;
+  letter-spacing: 1.2;
+}
+.section.assistance form {
+  font-size: 26px;
+}
+.section.assistance form input,
+.section.assistance form textarea {
+  padding: 12px 8px;
+  border-radius: 5px;
+  border: 1px solid #9f9fa0;
+}
+.section.assistance form .form-title {
+  font-size: 26px;
+  color: #333333;
+  margin-bottom: 35px;
+}
+.section.assistance form .input-group {
+  margin-bottom: 38px;
+}
+.section.assistance form .input-group input {
+  width: 240px;
+  margin-right: 38px;
+}
+.section.assistance form #IELTS-score {
+  width: 545px;
+}
+.section.assistance form #detail-experience {
+  width: 1200px;
+  height: 155px;
+}
+.section.assistance form button {
+  color: #333333;
+  font-size: 26px;
+  background-color: #ffe32f;
+  width: 265px;
+  height: 65px;
+  text-align: center;
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}

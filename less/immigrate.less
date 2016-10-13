@@ -1,0 +1,294 @@
+@import "sprites";
+
+// Box sizing reset
+// apply a natural box layout model to all elements, but allowing components to change
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.section .title{
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.section.top{
+  font-size: 22px;
+  background-color: #f0f0f0;
+  height: 1510px;
+  .inner-container{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .top-half{
+    background-image: url("../img/immigrate_slide1_up.png");
+    height: 624px;
+    background-position: center;
+    .au-immigrate{
+      font-size: 0;
+      margin: 0 auto;
+      position: relative;
+      top: 100px;
+    }
+    p{
+      color: white;
+      width: 320px;
+      margin: 0 auto;
+      position: relative;
+      top: 160px;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  .bottom-half{
+    background-image: url("../img/immigrate_slide1_down.png");
+    height: 843px;
+    background-position: center;
+    position: relative;
+    .slider-viewport {
+      width: 780px;
+      margin: 0 auto;
+      overflow: hidden;
+      .slides-container {
+        width: 3120px;
+        position: relative;
+        left: 0;
+        height: 504px;
+        transition: left .5s ease-in-out;
+        .slides{
+          float: left;
+        }
+      }
+    }
+    h2{
+      font-size: 0;
+      margin: 0 auto;
+      position: relative;
+      top: 70px;
+    }
+    p{
+      width: 780px;
+      margin: 0 auto;
+      padding: 134px 0;
+    }
+    .status-bar {
+      position: absolute;
+      left: 50%;
+      width: 100px;
+      margin-left: -50px;
+      bottom: 250px;
+      text-align: center;
+      li{
+        float: left;
+        width: 21px;
+        height: 21px;
+        text-align: center;
+        display: inline-block;
+        font-size: 0px;
+        margin-right: 5px;
+        cursor: pointer;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    .control-btns a{
+      position: absolute;
+      top: 150px;
+      font-size: 0;
+      cursor: pointer;
+    }
+    .up{
+      left: 40px;
+    }
+    .down{
+      right: 40px;
+    }
+  }
+}
+
+.section.benefit-development{
+  height: 600px;
+  .inner-container{
+    padding-top: 70px;
+    height: inherit;
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url("../img/immigrate_bg_development.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .benefits{
+      padding-top: 100px;
+    }
+    .benefit-item{
+      width: 275px;
+      height: 305px;
+      margin-right: 28px;
+      float: left;
+      border: 1px solid #f2f2f2;
+      box-shadow: -2px 6px 30px 0px rgba(181,177,181,1);
+      transition: background-color, border-color 0.1s ease-in;
+      i{
+        margin: 35px auto 20px auto;
+        display: block;
+        width: 120px;
+        height: 130px;
+        text-align: center;
+        line-height: 130px;
+        font-size: 120px;
+        color: #84ccc9;
+      }
+      .benefit-detail{
+        color: #666666;
+        font-size: 20px;
+        padding: 0 40px;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        background-color: #ffdd00;
+        border-color: #ffdd00;
+        i{
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.section.related{
+  height: 600px;
+  background-color: #f0f0f0;
+  .inner-container{
+    height: inherit;
+    width: 1205px;
+    margin: 0 auto;
+    padding-top: 70px;
+    .related-materials{
+      padding-top: 100px;
+      .related_material_on_hover_01{
+        color: white;
+      }
+    }
+    .related-item{
+      float: left;
+      text-align: center;
+      font-size: 25px;
+      display: table;
+      transition: color 0.3s ease-in;
+      p{
+        padding: 0 80px;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.section.candidate-and-requirement{
+  height: 680px;
+  .inner-container{
+    height: inherit;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  .requirements{
+    width: 980px;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: block;
+  }
+  .requirement-item{
+    width: 290px;
+    height: 390px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    margin-right: 50px;
+    transition: background-color 0.2s ease-in;
+    i{
+      display: block;
+      margin: 70px auto 60px auto;
+      width: 129px;
+      height: 129px;
+      border-radius: 50%;
+      border: 3px solid #333333;
+      text-align: center;
+      line-height: 129px;
+      font-size: 45px;
+    }
+    .requirement-detail{
+      font-size: 20px;
+      color: #333333;
+      text-align: center;
+    }
+    &:hover{
+      background-color: #ffe32f;
+      border-color: #ffe32f;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.section.assistance{
+  background-color: #f0f0f0;
+  height: 1000px;
+  .inner-container{
+    height: inherit;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  .taoli-des{
+    color:#666666;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    line-height: 2.1;
+    letter-spacing: 1.2;
+  }
+  form{
+    font-size: 26px;
+    input, textarea{
+      padding: 12px 8px;
+      border-radius: 5px;
+      border: 1px solid #9f9fa0;
+    }
+    .form-title{
+      font-size: 26px;
+      color: #333333;
+      margin-bottom: 35px;
+    }
+    .input-group{
+      margin-bottom: 38px;
+      input{
+        width: 240px;
+        margin-right: 38px;
+      }
+    }
+    #IELTS-score{
+      width: 545px;
+    }
+    #detail-experience{
+      width: 1200px;
+      height: 155px;
+    }
+    button{
+      color: #333333;
+      font-size: 26px;
+      background-color: #ffe32f;
+      width: 265px;
+      height: 65px;
+      text-align: center;
+      border: 0;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

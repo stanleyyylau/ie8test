@@ -1,0 +1,125 @@
+.inner-container{
+  background-image: url("../img/bg_zhongbao.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-position-x: 810px;
+  width: 1200px;
+  margin: 0 auto;
+  .intro{
+    width: 735px;
+    h2{
+      font-size: 40px;
+      color: #333333;
+      margin: 90px 0 35px 0;
+    }
+    p{
+      font-size: 20px;
+      color: #666666;
+      margin-bottom: 30px;
+    }
+    .steps{
+      padding-left: 49px;
+      margin-bottom: 60px;
+      li{
+        float: left;
+        width: 120px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+        text-align: center;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 30px;
+        background-color: white;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      .first{
+        color: white;
+        background-color: #ffcc00;
+        border: 0;
+      }
+      .second{
+        color: #d3c81a;
+        border-color: #cccc33;
+      }
+      .third{
+        color: #99cc33;
+        border-color: #99cc33;
+      }
+      .fourth{
+        color: #66cc66;
+        border-color: #66cc66;
+      }
+      .fifth{
+        color: white;
+        background-color: #57bd63;
+        border: 0;
+      }
+    }
+    .steps-container {
+      position: relative;
+    }
+    .steps-container:before {
+      content: "";
+      width: 100%;
+      border-bottom: 3px dotted #d9d9d9;
+      position: absolute;
+      bottom: 25px;
+      z-index: -1;
+    }
+    .steps-container:after{
+      content: "";
+      background-image: url(../img/zhongzhongbao_arrow.png);
+      height: 21px;
+      width: 22px;
+      position: absolute;
+      top: 10px;
+    }
+  }
+  .review{
+    width: 740px;
+    padding-bottom: 80px;
+    .content{
+      width: 590px;
+      position: relative;
+      background-color: #fafafa;
+      font-size: 16px;
+      color: #7e6b5a;
+      padding: 25px;
+      border-radius: 20px;
+      line-height: 1.8;
+    }
+    .img-container{
+      width: 70px;
+      height: 70px;
+      background-color: #fafafa;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 70px;
+      img{
+        height: 70px;
+        width: 70px;
+      }
+    }
+    .first{
+      margin-bottom: 20px;
+      .img-container{
+        float: left;
+      }
+      .content{
+        float: right;
+      }
+    }
+    .second{
+      .img-container{
+        float: right;
+      }
+      .content{
+        float: left;
+      }
+    }
+
+  }
+}

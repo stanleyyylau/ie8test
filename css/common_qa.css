@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.inner-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0 50px 0;
+}
+.inner-container .m-sidebar-qa {
+  width: 243px;
+  height: 790px;
+  float: left;
+  padding-top: 10px;
+  border: 1px solid #ededed;
+}
+.inner-container .m-sidebar-qa li {
+  padding-left: 55px;
+}
+.inner-container .m-sidebar-qa li a {
+  color: black;
+}
+.inner-container .m-content {
+  width: 912px;
+  float: right;
+}
+.inner-container .menu li {
+  height: 65px;
+  line-height: 65px;
+  font-size: 20px;
+}
+.inner-container .menu li.on-select {
+  background-color: #ffdd00;
+}
+.inner-container .qa-list li {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 18px;
+}
+.inner-container .qa-list li .on-select {
+  color: #ffcc00;
+  position: relative;
+}
+.inner-container .qa-list li .on-select:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 12px;
+  border-color: transparent transparent transparent #ffcc00;
+  position: absolute;
+  left: -20px;
+}
+.update-item {
+  background-color: #fafafa;
+  margin-bottom: 15px;
+  height: 130px;
+  padding: 25px 0;
+}
+.update-item .update-img {
+  float: left;
+  width: 90px;
+  height: 80px;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 20px;
+}
+.update-item .update-img img {
+  vertical-align: middle;
+}
+.update-item .update-date {
+  float: left;
+  width: 167px;
+  height: 80px;
+  display: inline-block;
+  padding-top: 6px;
+}
+.update-item .update-date h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.update-item .update-date h2 span {
+  font-size: 24px;
+}
+.update-item .update-content {
+  width: 500px;
+  height: 80px;
+  float: left;
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 10px;
+}
+.update-item .update-content h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.update-item .update-content P {
+  font-size: 16px;
+  color: #999999;
+}
+.update-item .publish-time {
+  float: left;
+  display: inline-block;
+  height: 80px;
+  width: 150px;
+  line-height: 1;
+  font-size: 12px;
+  color: #999999;
+  padding-top: 10px;
+  text-align: left;
+  padding-left: 15px;
+}

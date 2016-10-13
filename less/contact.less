@@ -1,0 +1,95 @@
+// Box sizing reset
+// apply a natural box layout model to all elements, but allowing components to change
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.m-wrap{
+  background-color: #f0f0f0;
+  padding-bottom: 115px;
+}
+
+.inner-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+// Reuseable module
+.m-sidebar{
+  padding-top: 30px;
+  width: 265px;
+  height: 370px;
+  float: left;
+  background-color: white;
+  .menu{
+    li{
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      font-size: 24px;
+      position: relative;
+      a{
+        color: black;
+      }
+      &.on-select{
+        background-color: #ffdd00;
+        z-index: 2;
+        &:after{
+          border: 0;
+        }
+      }
+      &:after{
+        height: 0;
+        padding: 0;
+        border-bottom: 1px solid #dcdcdc;
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        width: 177px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.m-content{
+  float: left;
+  width: 915px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 60px 45px;
+}
+
+.m-content{
+  border: 1px solid #8f8a8a;
+  h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  p{
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc;
+    line-height: 1.8;
+    width: 675px;
+    &:last-child{
+      border: 0;
+      margin-bottom: 130px;
+    }
+    strong{
+      display: block;
+      color: #83cbf0;
+      margin-bottom: 5px;
+    }
+  }
+}
