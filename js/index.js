@@ -22,15 +22,21 @@ var app = {
     videoPopup: $('.video-popup'),
     videoPopupLayer: $('.pop-up-layer'),
     videoContainer: $('.video-container'),
+    videoPlayBox: $('.video-play-box'),
     sliderViewport: $('.slider-viewport')
   },
 
   showVideoPopUp: function(){
+    console.log('clicking show video')
     app.$DOM.videoPopup.show();
+    app.$DOM.videoPopupLayer.show();
+    app.$DOM.videoPlayBox.show(400);
   },
 
   hideVideoPopUp: function(){
     app.$DOM.videoPopup.hide();
+    app.$DOM.videoPopupLayer.hide();
+    app.$DOM.videoPlayBox.hide();
   },
 
   fadeInWhenVis: function(vis){

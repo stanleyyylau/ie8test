@@ -28,7 +28,8 @@ var app = (function(){
         slider.goTo = slider.const.$sliderViewPort.slider({
           doItAfterEachSlide: function(index){
             slider.makeActive(index);
-          }
+          },
+          sliderViewport: 886
         }).goTo;
       }
   }
@@ -38,7 +39,7 @@ var app = (function(){
     message: '',
     url: "https://st-portfolio-on.herokuapp.com/message",
 
-    sendToServer: function(d){
+    sendToServer: function(d, form){
       $.ajax({
         url: sendMessage.url,
         method: 'POST',
@@ -48,7 +49,9 @@ var app = (function(){
              d.close();
             dialog({
                 content: '发送成功',
-                ok: function () {},
+                ok: function () {
+                  sendMessage.resetForm(form);
+                },
                 cancel: false
             }).show();
 
@@ -76,6 +79,7 @@ var app = (function(){
     },
 
     onSubmitClick: function(e){
+      var theForm = this;
       event.preventDefault();
        message = $( this ).serialize();
       sendMessage.d = dialog({
@@ -83,7 +87,7 @@ var app = (function(){
           content: '是否确认提交申请?',
           okValue: '确定',
           ok: function () {
-              sendMessage.sendToServer(sendMessage.d);
+              sendMessage.sendToServer(sendMessage.d, theForm);
               this.title('提交中…');
               return false;
           },
@@ -93,6 +97,10 @@ var app = (function(){
       sendMessage.d.show();
     },
 
+    resetForm: function(form){
+      form.reset();
+    },
+
     bindEvent: function(){
       $( "form" ).on( "submit", sendMessage.onSubmitClick )
     }
@@ -100,12 +108,6 @@ var app = (function(){
 
   // Let's handle other stuff
   var temp = {
-    handlerIn: function(){
-      $(this).toggleClass('related_material_on_hover_01');
-    },
-    handlerOut: function(){
-      $(this).toggleClass('related_material_on_hover_01');
-    },
     bindEvent: function(){
       $('.related-item').mouseenter(temp.handlerIn).mouseleave(temp.handlerOut);
       $('.enroll-now').on('click',function(){
@@ -126,7 +128,8 @@ var app = (function(){
   // API for other developer to use
   return {
     sliderGoTo: slider.goTo,
-    backEndUrl: sendMessage.url
+    backEndUrl: sendMessage.url,
+    resetForm: sendMessage.resetForm
   }
 }
 )();

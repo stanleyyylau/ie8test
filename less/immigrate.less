@@ -12,6 +12,18 @@ html {
 .section .title{
   margin: 0 auto;
   font-size: 0;
+  position: relative;
+  &:after{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: #d6d6d6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -35px;
+  }
 }
 
 .section.top{
@@ -19,14 +31,14 @@ html {
   background-color: #f0f0f0;
   height: 1510px;
   .inner-container{
-    width: 1200px;
+    width: 1343px;
     margin: 0 auto;
   }
   .top-half{
     background-image: url("../img/immigrate_slide1_up.png");
     height: 624px;
     background-position: center;
-    .au-immigrate{
+    .taoli-immigrate-working{
       font-size: 0;
       margin: 0 auto;
       position: relative;
@@ -34,17 +46,18 @@ html {
     }
     p{
       color: white;
-      width: 320px;
+      width: 350px;
       margin: 0 auto;
       position: relative;
-      top: 160px;
+      top: 150px;
       text-align: center;
       padding: 10px 0;
+      line-height: 2.2;
     }
   }
   .bottom-half{
     background-image: url("../img/immigrate_slide1_down.png");
-    height: 843px;
+    height: 886px;
     background-position: center;
     position: relative;
     .slider-viewport {
@@ -69,16 +82,18 @@ html {
       top: 70px;
     }
     p{
-      width: 780px;
+      width: 886px;
       margin: 0 auto;
       padding: 134px 0;
+      text-align: center;
+      line-height: 2.2;
     }
     .status-bar {
       position: absolute;
       left: 50%;
       width: 100px;
       margin-left: -50px;
-      bottom: 250px;
+      bottom: 295px;
       text-align: center;
       li{
         float: left;
@@ -101,10 +116,10 @@ html {
       cursor: pointer;
     }
     .up{
-      left: 40px;
+      left: 110px;
     }
     .down{
-      right: 40px;
+      right: 110px;
     }
   }
 }
@@ -179,6 +194,11 @@ html {
       font-size: 25px;
       display: table;
       transition: color 0.3s ease-in;
+      &:hover{
+        background-image: url('../img/related_material_on_hover.png');
+        background-position: center;
+        color: white;
+      }
       p{
         padding: 0 80px;
         display: table-cell;

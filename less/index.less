@@ -1,3 +1,4 @@
+@import "sprites_index";
 @import "sprites";
 @import "animate";
 @import "iconfont";
@@ -80,7 +81,7 @@ html {
     height: 100%;
     background-color: rgba(36, 34, 34, 0.88);
     top: 0;
-    z-index: 1;
+    z-index: 10001;
   }
   .video-play-box {
     position: fixed;
@@ -92,7 +93,8 @@ html {
     left: 0;
     right: 0;
     margin: -150px auto auto auto;
-    z-index: 2;
+    z-index: 10002;
+    display: none;
   }
   video {
     width: 600px;
@@ -147,6 +149,9 @@ html {
       p{
         font-size: 20px;
       }
+    }
+    .detail-box{
+      color: #666666;
     }
     .detail-box h3{
       height: 45px;
@@ -404,7 +409,7 @@ html {
   background-image: url("../img/index_bg_copperation.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 150px 0 400px 0;
+  padding: 130px 0 400px 0;
   height: 865px;
   .inner-container{
     width: 750px;
@@ -425,7 +430,6 @@ html {
         border: 2px solid #eeeeee;
         border-radius: 5px;
         background-repeat: no-repeat;
-        background-position: center;
         font-size: 0;
         &:last-child{
           margin-right: 0;
@@ -447,7 +451,6 @@ html {
         float: left;
         margin-right: 35px;
         background-repeat: no-repeat;
-        background-position: center;
         font-size: 0;
         &:last-child{
           margin-right: 0;

@@ -1,0 +1,50 @@
+.index-logo-minors-05,
+.index-logo-minors-03,
+.index-logo-minors-04,
+.index-logo-minors-01,
+.index-logo-minors-02,
+.index-logo-corpora,
+.index-logo-idea,
+.index-logo-phoenix {
+  background: url(../img/sprites_index.png) no-repeat;
+}
+.index-logo-minors-05 {
+  background-position: 0 -627px;
+  width: 133px;
+  height: 62px;
+}
+.index-logo-minors-03 {
+  background-position: 0 -543px;
+  width: 113px;
+  height: 62px;
+}
+.index-logo-minors-04 {
+  background-position: 0 -703px;
+  width: 114px;
+  height: 62px;
+}
+.index-logo-minors-01 {
+  background-position: 0 -394px;
+  width: 108px;
+  height: 62px;
+}
+.index-logo-minors-02 {
+  background-position: 0 -468px;
+  width: 123px;
+  height: 62px;
+}
+.index-logo-corpora {
+  background-position: 0 -131px;
+  width: 194px;
+  height: 119px;
+}
+.index-logo-idea {
+  background-position: 0 0;
+  width: 194px;
+  height: 120px;
+}
+.index-logo-phoenix {
+  background-position: 0 -260px;
+  width: 191px;
+  height: 119px;
+}

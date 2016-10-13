@@ -104,9 +104,11 @@ html {
 }
 .hero .compare-box .others {
   background-color: #e5e5e5;
+  color: #333333;
 }
 .hero .compare-box .taoli {
   background-color: #ffe32f;
+  color: #585858;
 }
 .section {
   position: relative;
